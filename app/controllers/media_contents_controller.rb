@@ -1,10 +1,10 @@
 class MediaContentsController < ApplicationController
   def create
-    @media = Media.new(media_file_name: param[:file])
+    @media = Media.new(file_name: params[:file])
     if @media.save!
       respond_to do |format|
         format.json {
-          render: json: @media
+          render json: @media
         }
       end
     end

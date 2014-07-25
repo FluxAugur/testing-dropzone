@@ -40,3 +40,6 @@ gem 'spring',        group: :development
 
 gem 'dropzonejs-rails'
 gem 'carrierwave'
+gem 'paperclip'
+gem 'aws-sdk'
+gem 's3_direct_upload'
